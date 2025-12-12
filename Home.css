@@ -49,6 +49,7 @@ body{
 }
 
 .nav a {
+    font-family:'Times New Roman', Times, serif;
     color: var(--card-bg);
     text-decoration: none;
     margin-left: 24px;
@@ -660,27 +661,50 @@ body{
     cursor: pointer;
 }
 
+/* SHARED BUTTON STYLES */
+#loginBtn,
+#signupBtn {
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 110px;          /* consistent shape */
+
+}
+
+/* LOGIN BUTTON STYLE */
 #loginBtn {
-    background: #14532d;          /* dark green */
+    background: #14532d;        /* dark green */
     color: white;
     border-color: #14532d;
+    transform: translate(-0px, -10px);
+    
+
 }
 
 #loginBtn:hover {
-    background: #1b6b3c;          /* lighter green */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(20, 83, 45, 0.3);
+    background: #1b6b3c;        /* lighter green */
+    border-color: #1b6b3c;
+    
+    box-shadow: 0 4px 12px rgba(20, 83, 45, 0.35);
 }
 
 /* SIGNUP BUTTON STYLE */
 #signupBtn {
-    background: #facc15;          /* yellow */
+    background: #facc15;        /* yellow */
     color: #1a1a1a !important;
     border-color: #facc15;
+    transform: translate(-0px, -10px);
 }
 
 #signupBtn:hover {
-    background: #fddb4f;          /* lighter yellow */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
+    background: #ffe15f;        
+    border-color: #ffe15f;
+    
+    box-shadow: 0 4px 14px rgba(250, 204, 21, 0.45);
 }

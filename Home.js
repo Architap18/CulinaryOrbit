@@ -1,7 +1,6 @@
 // Mobile menu toggle, focus-trap for mobile nav, and header hide-on-scroll
 (function(){
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileNav = document.getElementById('mobileNav');
+ 
   const siteTopbar = document.getElementById('siteTopbar');
   let lastScroll = window.scrollY || 0;
   function openMenu(){
@@ -40,6 +39,7 @@
       if(menuToggle.getAttribute('aria-expanded') === 'true') closeMenu();
     }
   });
+
   // simple hide-on-scroll header: hide when scrolling down, show when up
   let ticking = false;
   window.addEventListener('scroll', function(){
