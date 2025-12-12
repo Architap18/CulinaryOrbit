@@ -44,7 +44,7 @@ const recipes = {
 
     VegKathiRolls: {
         title: "VegKathiRolls",
-        image: "img/img2.jpg",
+        image: "img/vegetable_kathi_roll.jpg",
         prepTime: "20 mins",
         cookTime: "15 mins",
         servings: "4 rolls",
@@ -64,7 +64,7 @@ const recipes = {
     },
     ChocolateMugCake: {
         title: "Chocolate MugCake",
-        image: "img/dal.avif",
+        image: "img/mug.jpg",
         prepTime : "10 mins",
         cookTime: "5 mins",
         servings: "2 servings",
@@ -84,7 +84,7 @@ const recipes = {
 
     Cheesecake: {
         title: "Cheesecake",
-        image: "img/Gajar-Halwa.jpg",
+        image: "img/easy-cheesecake.avif",
         prepTime: "30 mins",
         cookTime: "40 mins",
         servings: "8 slices",
@@ -106,7 +106,7 @@ const recipes = {
 
     Butterchicken: {
         title: "Butter Chicken",
-        image: "img/butter chicken.jpg",
+        image: "img/chicken-butter-masala.jpg",
         prepTime: "20 mins",
         cookTime: "30 mins",
         servings: "4 servings",
@@ -127,7 +127,7 @@ const recipes = {
     },
     Chessesand: {
         title: "Cheese Sandwich",
-        image: "img/sandwich.jpeg",
+        image: "img/c.jpg",
         prepTime: "10 mins",
         cookTime: "5 mins",
         servings: "2 sandwiches",
@@ -146,7 +146,7 @@ const recipes = {
     },
     Masaladosa: {
         title: "Masala Dosa",
-        image: "img/masala dosa.jpg",
+        image: "img/d.jpeg",
         prepTime: "15 mins",
         cookTime: "20 mins",
         servings: "4 dosas",
@@ -166,7 +166,7 @@ const recipes = {
     },  
     DalTadka: {
         title: "Dal Tadka",
-        image: "img/dal.avif",
+        image: "img/dal.webp",
         prepTime: "10 mins",
         cookTime: "25 mins",
         servings: "4 servings",
@@ -186,7 +186,7 @@ const recipes = {
     },  
     PavBhaji: {
         title: "Pav Bhaji",
-        image: "img/pav bhaji.webp",
+        image: "img/pav.webp",
         prepTime: "20 mins",
         cookTime: "30 mins",
         servings: "4 servings",
@@ -206,7 +206,7 @@ const recipes = {
     },
     MalaiKofta: {
         title: "Malai Kofta",
-        image: "img/malai kofta.jpg",
+        image: "img/m.jpeg",
         prepTime: "30 mins",
         cookTime: "25 mins",
         servings: "4 servings",
@@ -226,7 +226,7 @@ const recipes = {
     },
     AglioE: {
         title: "Aglio E Olio",
-        image: "img/aglio e olio.jpg",
+        image: "img/s.webp",
         prepTime: "10 mins",
         cookTime: "15 mins",
         servings: "2 servings",
@@ -246,7 +246,7 @@ const recipes = {
     },
     Gajarka: {
         title: "Gajar ka Halwa",
-        image: "img/gajar ka halwa.jpg",
+        image: "img/gajar.jpeg",
         prepTime: "15 mins",
         cookTime: "45 mins",
         servings: "4 servings",
@@ -266,7 +266,7 @@ const recipes = {
     },
     MangoSmoothie: {
         title: "Mango Smoothie",
-        image: "img/mango smoothie.jpg",
+        image: "img/mango.jpg",
         prepTime: "5 mins",
         cookTime: "0 mins",     
         servings: "2 servings", 
@@ -284,7 +284,7 @@ const recipes = {
     },
     Parfait: {
         title: "Fruit Yogurt Parfait",
-        image: "img/fruit yogurt parfait.jpg",  
+        image: "img/fruit.jpeg",  
         prepTime: "10 mins",
         cookTime: "0 mins",
         servings: "2 servings", 
@@ -302,7 +302,7 @@ const recipes = {
     },
     QuinoaSalad: {
         title: "Quinoa Salad",
-        image: "img/quinoa salad.jpg",
+        image: "img/salad.jpg",
         prepTime: "15 mins",
         cookTime: "15 mins",
         servings: "2 servings",
@@ -322,7 +322,7 @@ const recipes = {
     },
     GarlicBread: {
         title: "Garlic Bread",
-        image: "img/garlic bread.jpg",
+        image: "img/garlic.jpg",
         prepTime: "10 mins",
         cookTime: "15 mins",
         servings: "4 servings",
@@ -341,7 +341,7 @@ const recipes = {
     },
     FrenchFries: {
         title: "French Fries",
-        image: "img/french fries.jpg",
+        image: "img/fries.jpg",
         prepTime: "10 mins",
         cookTime: "20 mins",
         servings: "4 servings",

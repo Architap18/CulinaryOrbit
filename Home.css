@@ -1,14 +1,4 @@
-/* :root{
-  --cream:#fbf7f0;
-  --deep-green:#f4f4f4; 
-  --card-bg:#fffef9; 
-   
-  --muted:#6b6b66;
-  --accent:#f7f3c6;
-  --max-width:1600px;
-  --our-hero-green:#0f3f28;
-  --pale-green:#eef7e8;
-}   */
+
 *{
     box-sizing:border-box
 }
@@ -91,7 +81,7 @@ body{
 /* Hero */
 .hero{
     padding:28px 0 80px;
-    background-image: url("img/homebackground.avif") ;
+    background-image: url("img/home background.avif") ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -618,4 +608,79 @@ body{
 @media (max-width:600px){
   .contact-title{font-size:36px}
   .contact-form .name-row{flex-direction:column}
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.form-content {
+    background: white;
+    padding: 25px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #14532d;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginBtn {
+    background: #14532d;          /* dark green */
+    color: white;
+    border-color: #14532d;
+}
+
+#loginBtn:hover {
+    background: #1b6b3c;          /* lighter green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(20, 83, 45, 0.3);
+}
+
+/* SIGNUP BUTTON STYLE */
+#signupBtn {
+    background: #facc15;          /* yellow */
+    color: #1a1a1a !important;
+    border-color: #facc15;
+}
+
+#signupBtn:hover {
+    background: #fddb4f;          /* lighter yellow */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
 }

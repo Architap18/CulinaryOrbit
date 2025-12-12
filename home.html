@@ -7,21 +7,45 @@
     <link rel="stylesheet" href="Home.css">
   </head>
   <body>
-    <header class="topbar" id="siteTopbar" style="background-color: white;color: black;">
-      <div class="container topbar-inner">
-        <img class="icon"src="img/icon2.png">
-        <a class="brand" href="#" style="color: black;">Culinary Orbit</a>
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="recipes.html">Recipe</a>
-          <a href="#blog">Blog</a>
-          <a href="faq.html">FAQ</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-    
+    <header class="topbar" id="siteTopbar" style="background-color: white; color: black;">
+  <div class="container topbar-inner">
+    <img class="icon" src="img/icon2.png">
+    <a class="brand" href="#" style="color: black;">Culinary Orbit</a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="recipes.html">Recipe</a>
+      <a href="#blog">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#contact">Contact</a>
+      <!-- Login / Signup Buttons -->
+      <a href="#" id="loginBtn">Login</a>
+      <a href="#" id="signupBtn">Signup</a>
+    </nav>
+  </div>
+</header>
+<!-- POPUP FORM (outside header) -->
+<div class="form-popup" id="popupForm">
+  <div class="form-content">
+      <span id="closeForm" class="close-btn">&times;</span>
+      <h3 id="form-title">Login</h3>
+
+      <form id="userForm">
+          <label>Name</label>
+          <input type="text" id="name" required>
+
+          <label>Age</label>
+          <input type="number" id="age" required>
+
+          <label>Password</label>
+          <input type="password" id="password" required>
+
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  </div>
+</div>
+
   <main id="main">
       <section class="hero" > 
         <div class="container hero-frame">
@@ -148,7 +172,7 @@
         </div>
       </section>
     </main>
-    <footer class="kab-footer">
+<footer class="kab-footer">
 
   <!-- Top Icons Row -->
   <div class="kab-top-icons">
@@ -178,7 +202,7 @@
         <li><a href="#">Shipping</a></li>
         <li><a href="#">Returns & Refunds</a></li>
         <li><a href="#">Gift Card Balance Lookup</a></li>
-        <li><a href="#">Baker’s Rewards</a></li>
+        <li><a href="#">Baker's Rewards</a></li>
         <li><a href="#">Affiliate Program</a></li>
       </ul>
     </div>
@@ -246,7 +270,42 @@
   </div>
 
 </footer>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+<script>
+let loginBtn = document.getElementById("loginBtn");
+let signupBtn = document.getElementById("signupBtn");
+let popupForm = document.getElementById("popupForm");
+let formTitle = document.getElementById("form-title");
+let closeForm = document.getElementById("closeForm");
+let userForm = document.getElementById("userForm");
+
+loginBtn.onclick = () => {
+  formTitle.innerText = "Login";
+  popupForm.style.display = "flex";
+};
+
+signupBtn.onclick = () => {
+  formTitle.innerText = "Signup";
+  popupForm.style.display = "flex";
+};
+
+closeForm.onclick = () => {
+  popupForm.style.display = "none";
+};
+
+userForm.onsubmit = (e) => {
+  e.preventDefault();
+
+  if (formTitle.innerText === "Login") {
+    alert("Login Successful!");
+  } else {
+    alert("Signup Done!");
+  }
+
+  popupForm.style.display = "none";
+  userForm.reset();
+};
+</script>
+
     <script src="Home.js" defer></script>
   </body>
 </html>
