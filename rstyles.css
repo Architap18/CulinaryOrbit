@@ -266,6 +266,35 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.kab-footer {
+  background: #ffffff;
+  font-family: "Arial", sans-serif;
+  color: #2a2a2a;
+  padding: 40px 60px;
+}
+.icon-box img {
+  height: 60px;
+}
+
+.icon-box .big {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.icon-box p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.kab-top-icons {
+  background: #bbb9b9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 /* LINK GRID */
 .kab-links {

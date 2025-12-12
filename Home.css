@@ -132,7 +132,7 @@ body{
     margin:0 0 18px;
     line-height:1.7
 }
-/* blog CTA */
+
 .btn-blog{ 
     display:inline-block;
     background:#f7f3c6;
@@ -327,15 +327,12 @@ body{
     margin:0 0 14px;
     flex:1
 }
-/* larger banner spacing on wide screens */
+
 @media (min-width:1100px){
   .about-hero-inner{padding-left:56px;padding-right:56px}
   .about-title{font-size:92px}
 }
-/* Sections */
-/* .section{
-    padding:48px 0
-} */
+
 #contact{
     background-color: rgb(250,243,235);
 }
