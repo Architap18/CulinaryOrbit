@@ -1,0 +1,147 @@
+body {
+    background: #f7f2ec;
+    font-family: Georgia, serif;
+    padding: 40px;
+}
+
+.topbar{
+    position: sticky;
+    
+    }
+.topbar-inner{
+    background:var(--deep-green);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px ;
+    
+    position:relative;
+    transition:transform .28s ease,box-shadow .28s ease
+}
+.topbar--hidden{
+    transform:translateY(-120%)
+}
+.brand{
+    color:var(--card-bg);
+    font-family:Playfair Display,serif;
+    font-size:50px;
+    text-decoration:none;
+    padding-left:6px
+}
+.nav a {
+    color: var(--card-bg);
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 22px;   /* INCREASED size from 16px to 22px */
+    letter-spacing: 0.5px;
+}
+
+/* skip link */
+.skip-link{
+    position:absolute;
+    left:-9999px;top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden
+}
+.skip-link:focus{
+    position:static;
+    width:auto;
+    height:auto;
+    padding:8px 12px;
+    margin:8px;
+    border-radius:6px;
+    background:#000;
+    color:#fff
+}
+
+
+.recipe-img {
+    width: 350px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#recipe-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+#recipe-meta p {
+    margin: 5px 0;
+}
+
+h2 {
+    margin-top: 25px;
+}
+.kab-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.kab-col h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.kab-col h3::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #a92b2b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.kab-col ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.kab-col li {
+  margin-bottom: 8px;
+}
+
+.kab-col a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.kab-col a:hover {
+  text-decoration: underline;
+}
+
+/* BOTTOM TEXT */
+.kab-bottom {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.kab-bottom-links {
+  text-align: left;
+  font-size: 13px;
+}
+
+.kab-bottom-links a {
+  color: #444;
+  text-decoration: none;
+}
+
+.kab-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+.kab-bottom-links span {
+  margin: 0 10px;
+  color: #888;
+}

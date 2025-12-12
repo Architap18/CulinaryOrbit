@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager FAQ</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            background: url("img/faq.avif") no-repeat center center fixed;
+            background-size: cover;
+            
+
+        }
+        .faq-container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.55); /* faint white panel */
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(4px); /* clean frosted effect */
+}
+
+        
+
+        .faq-container {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .faq-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 5px;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 500;
+            color: #111827;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+     .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    color: #4b5563;
+    line-height: 1.6;
+    transition: max-height 0.15s ease; /* shorter duration */
+    padding-right: 20px;
+}
+
+
+        .arrow {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="faq-container">
+
+    <div class="faq-title">Recipe Manager - FAQ</div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            1. What is the Recipe Manager?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            It is a tool where you can save, organize, and view all your cooking recipes in one place.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            2. How do I add a recipe?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            Go to Add Recipe, fill in the details, and click Save.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            3. Can I edit or delete a recipe?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            Yes. Open any recipe and choose Edit or Delete.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            4. How do I search for a recipe?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            Use the search bar to find recipes by name, ingredients, or tags.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            5. Can I categorize my recipes?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            Yes. You can add tags like breakfast, dinner, dessert, etc.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            6. Can I add images to a recipe?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            Yes, you can upload one or more images for each recipe.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            7. How do I share a recipe?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            You can share using a link or download it as a PDF (depending on your app version).
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            8. Does the Recipe Manager work offline?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            Yes. All saved recipes can be accessed offline.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            9. Is my data backed up?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            If backup is enabled, your recipes will be saved to cloud storage automatically.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            10. Do I need an account to use it?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            No. You can use it without an account, but backup and sync need an account.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            11. Who can I contact for help?
+            <span class="arrow">⌄</span>
+        </div>
+        <div class="faq-answer">
+            You can reach out through the app’s Support section.
+        </div>
+    </div>
+
+</div>
+
+<script>
+// Basic JS toggle
+let items = document.querySelectorAll(".faq-item");
+
+items.forEach(function (item) {
+    item.addEventListener("click", function () {
+        item.classList.toggle("open");
+    });
+});
+</script>
+
+</body>
+</html>
